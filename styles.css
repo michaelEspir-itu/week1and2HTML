@@ -1,0 +1,119 @@
+/*Master styles*/
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 1px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*Navigation styles*/
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    color: black;
+  }
+  .left-side {
+    display: flex;
+  }
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  .active-nav-link {
+    border-bottom:none;
+  }
+  .active-nav-link a {
+    color: black !important;
+  }
+  .nav-link-wrapper a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .nav-link-wrapper:hover {
+    border-bottom: 1px solid coral;
+  }
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+
+  /*picture-image styles*/
+
+  .picture-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .picture-item-wrapper {
+    position: relative;
+  }
+  .picture-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+  }
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .img-text-wrapper .subtitle {
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+  }
+  .image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  .img-text-wrapper:hover .subtitle {
+    color:black;
+    font-weight: 600;
+  }
+  .logo-wrapper img {
+     width: 50%;
+     margin-bottom: 20px;
+   }
+   /* About Page*/
+   .two-column-wrapper{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+   .profile-image-wrapper img{
+     width:70% ;
+     height: 50%;
+     image-rendering: auto;
+     margin: 10px;
+   }
+   .profile-content-wrapper{
+     padding:30px;
+   }
+
+
+   .editor-note{
+     text-align: center;
+     color:lightcoral
+   }
+
+   .editor-note1{
+     text-align: center;
+     color:mediumblue;
+   }
